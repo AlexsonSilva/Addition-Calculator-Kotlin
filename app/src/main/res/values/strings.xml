@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AdditionCalculator</string>
+    <string name="First_Number" />
+    <string name="Second_Number" />
+    <string name="doSum" />
+    <string name="fNumber">First Number</string>
+    <string name="sNumber">Second Number</string>
+</resources>
