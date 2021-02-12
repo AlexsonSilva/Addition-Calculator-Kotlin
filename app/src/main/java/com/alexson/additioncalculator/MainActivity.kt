@@ -2,7 +2,6 @@ package com.alexson.additioncalculator
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
@@ -21,8 +20,8 @@ class MainActivity : AppCompatActivity() {
         val sum = findViewById<Button>(R.id.sum)
 
         sum.setOnClickListener{
-            result.text =  (fNumber.text.toString().toInt()+sNumber.text.toString().toInt()).toString()
-            Toast.makeText(this,  "Result"+result.text, Toast.LENGTH_LONG).show()
+            result.text =  (fNumber.text.toString().toDouble()+sNumber.text.toString().toDouble()).toString()
+            Toast.makeText(this,  "Result "+result.text, Toast.LENGTH_LONG).show()
         }
     }
 }
