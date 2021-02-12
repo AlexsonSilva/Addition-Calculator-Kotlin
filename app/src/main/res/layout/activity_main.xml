@@ -18,7 +18,7 @@
         android:layout_marginBottom="502dp"
         android:scrollbarSize="30dp"
         android:text="   Calculator"
-        android:textAlignment="center"
+        android:textAlignment="viewStart"
         android:textColor="#191818"
         android:textSize="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -29,19 +29,44 @@
         app:layout_constraintVertical_bias="0.828" />
 
     <EditText
+        android:id="@+id/first_number"
+        style="@style/whiteBox"
+        android:layout_width="364dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginBottom="416dp"
+        android:background="@android:color/white"
+        android:ems="10"
+        android:fontFamily="@font/roboto"
+        android:hint="@string/fNumber"
+        android:inputType="numberDecimal"
+        android:numeric="decimal"
+        android:textAlignment="viewStart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.546"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.695"
+        />
+
+    <EditText
         android:id="@+id/second_number"
         style="@style/whiteBox"
         android:layout_width="364dp"
         android:layout_height="28dp"
         android:layout_marginStart="72dp"
         android:layout_marginTop="112dp"
-        android:layout_marginEnd="71dp"
+        android:layout_marginEnd="72dp"
         android:layout_marginBottom="374dp"
         android:background="@android:color/white"
         android:ems="10"
         android:fontFamily="@font/roboto"
         android:hint="@string/sNumber"
-        android:inputType="number"
+        android:inputType="numberDecimal"
+        android:numeric="decimal"
         android:textAlignment="viewStart"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -57,10 +82,11 @@
         android:layout_height="71dp"
         android:layout_marginStart="72dp"
         android:layout_marginTop="151dp"
-        android:layout_marginEnd="71dp"
+        android:layout_marginEnd="72dp"
         android:layout_marginBottom="287dp"
         android:background="@android:color/white"
         android:fontFamily="@font/roboto"
+        android:numeric="decimal"
         android:text="result"
         android:textColorLink="#673AB7"
         android:textSize="25sp"
@@ -87,28 +113,6 @@
         app:layout_constraintTop_toBottomOf="@+id/result"
         app:layout_constraintVertical_bias="0.0" />
 
-    <EditText
-        android:id="@+id/first_number"
-        style="@style/whiteBox"
-        android:layout_width="364dp"
-        android:layout_height="28dp"
-        android:layout_marginStart="72dp"
-        android:layout_marginTop="70dp"
-        android:layout_marginEnd="71dp"
-        android:layout_marginBottom="416dp"
-        android:background="@android:color/white"
-        android:ems="10"
-        android:fontFamily="@font/roboto"
-        android:hint="@string/fNumber"
-        android:inputType="number"
-        android:textAlignment="viewStart"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.562"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.695" />
-
 
     <ImageView
         android:id="@+id/calculator_icon"
@@ -119,6 +123,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/calculator_icon" />
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
